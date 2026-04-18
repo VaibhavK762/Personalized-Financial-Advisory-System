@@ -16,7 +16,7 @@ def verify_password(password, hashed):
     except Exception:
         return False
 
-DB_PATH = os.path.join(os.path.dirname(__file__), "database.sqlite")
+DB_PATH = os.path.join(os.path.dirname(__file__), f"database_{uuid.uuid4().hex}.sqlite")
 
 def get_db():
     conn = sqlite3.connect(DB_PATH)
