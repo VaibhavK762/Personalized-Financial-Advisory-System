@@ -1,7 +1,6 @@
 // Ensure frontend and backend origins align to prevent strict browser CORS/PNA network errors
 // Default to localhost if opened via file:/// protocol (where hostname is empty)
-const hostname = window.location.hostname || 'localhost';
-const API_BASE = `http://${hostname}:8000/api`;
+const API_BASE = "https://personalized-financial-advisory-system-c71w.onrender.com/api";
 
 // ---- Backend Health State ----
 // Tracks whether the backend server is reachable. Starts as null (unknown),
